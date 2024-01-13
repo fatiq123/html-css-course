@@ -12,7 +12,15 @@
         /* note: that margin is also called as space between two buttons in this case */
     }
 
-    
+    /* :_ are pseudo classes */
+    .subscribe-button:hover {
+        /* background-color: green; */
+        opacity: 0.8;
+    }
+    .subscribe-button:active {
+        /* background-color: blue; */
+        opacity: 0.5;
+    }
 
     .like-button {
         color: rgb(43, 99, 195);
@@ -25,6 +33,15 @@
         border-radius: 2px;
         cursor: pointer;
     }
+
+    .like-button:hover {
+        background-color: rgb(43, 99, 195);
+        color: white;
+    }
+    .like-button:active {
+        opacity: 0.7;
+    }
+
     .tweet-button {
         color: white;
         font-weight: bold;
