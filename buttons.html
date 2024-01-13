@@ -8,8 +8,10 @@
         width: 105px;
         border-radius: 2px;
         cursor: pointer;
-        margin-right: 8px;
         /* note: that margin is also called as space between two buttons in this case */
+        margin-right: 8px;
+    
+        transition: opacity 0.15s;
     }
 
     /* :_ are pseudo classes */
@@ -32,6 +34,9 @@
         width: 65px;
         border-radius: 2px;
         cursor: pointer;
+        
+        transition: background-color 1s,
+         color 1s;
     }
 
     .like-button:hover {
