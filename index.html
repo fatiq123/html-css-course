@@ -24,30 +24,10 @@
         body {
             font-family: Roboto, Arial;
         }
-/* 
-        .paragraph {
-            background-color: aqua;
-            border-color: black;
-            border-width: 1px;
-            border-radius: 5px;
-            border-style: solid;
-            padding: 20px 10px;
-        }
-
-        .paragraph h3 {
-            display: inline;
-        }
-
-        .paragraph p {
-            font-size: 18px;
-            display: inline;
-        } */
 
 
 
-
-
-
+        /* navbar with flex property */
         /* styles.css
         body {
             font-family: Roboto, sans-serif;
@@ -78,8 +58,10 @@
             color: black;
         } */
 
-        
-        .navbar {
+
+
+        /* navbar without flex property but using float */
+        /* .navbar {
             display: block;
             height: 60px;
             background-color: #333;
@@ -98,15 +80,107 @@
             align-items: center;
             margin-top: 10px;
         }
+
         .navbar li a:hover {
             background-color: #444;
             color: white;
+        } */
+
+
+
+
+
+        .header {
+            padding: 0 70px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .items {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            list-style-type: none;
+            gap: 60px;
+        }
+        .items li a {
+            text-decoration: none;
+            color: black;
+            font-size: 1.2rem;
+        }
+        .items li a:hover {
+            color: aquamarine;
         }
 
 
 
+        .hero,
+        .about,
+        .services,
+        .contact {
+            max-width: 1000px;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+
+
+        .hero {
+            background-color: #eee;
+            height: 200px;
+        }
+        .hero h1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 6;
+        }
+        .about {
+            background-color: #eee;
+            height: 200px;
+        }
+        .about h1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 6;
+        }
+        .services {
+            background-color: #eee;
+            height: 200px;
+        }
+        .services h1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 6;
+        }
+        .contact {
+            background-color: #eee;
+            height: 200px;
+        }
+        .contact h1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 6;
+        }
+        .footer {
+            background-color: #777;
+            height: 40px;
+        }
+        .footer p {
+            /* margin: 0 auto;
+            line-height: 1.7; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
     </style>
 
+    <!-- navbar using flex and nav tag -->
     <!-- <nav>
         <ul class="navbar">
             <li><a href="#">Home</a></li>
@@ -116,22 +190,45 @@
     </nav> -->
 
 
-    <div>
+    <!-- navbar using float and using div tag -->
+    <!-- <div>
         <ul class="navbar">
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
+    </div> -->
+
+
+
+
+    <div class="header">
+        <h2 class="logo">Logo</h2>
+        <ul class="items">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
     </div>
 
 
-    <!-- <div class="paragraph">
-        <h3>Title</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, quia?</p>
+
+    <div class="hero">
+        <h1>Hero Section</h1>
     </div>
- -->
-
-
+    <div class="about">
+        <h1>About</h1>
+    </div>
+    <div class="services">
+        <h1>Our Services</h1>
+    </div>
+    <div class="contact">
+        <h1>Contact Us</h1>
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 All Rights Reserved</p>
+    </div>
 
 
 </body>
